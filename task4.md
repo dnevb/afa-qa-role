@@ -10,6 +10,8 @@ Browser: Google Chrome Version 111.0.5563.110 (arm)
 
 ## Expected results
 
+[Observations image](QA.png)
+
 1. Navigation and search bar should be aligned vertically
 2. My account and sign up buttons are missing
 3. Category bar and header section need a full width, currently is contained in a fixed width
