@@ -55,7 +55,7 @@ def test_validate_links(
 
     assert res.status < 300
 
-    page.screenshot(path=f'tmp/{page.title()}.png')
+    page.screenshot(path=f'tmp/{page.title()}.png', full_page=True)
 
     ctx.close()
   browser.close()
