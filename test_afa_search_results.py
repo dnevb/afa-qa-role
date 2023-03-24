@@ -15,8 +15,13 @@ def setup(page: Page):
 
   page.wait_for_load_state('domcontentloaded')
 
-def test_validate_results_number(page: Page):
-  pass
+
+@pytest.fixture
+def afa_nodes(page:Page):
+  return page.query_selector_all('a[href*="aidforaids.org"]')
+
+def test_validate_results_number(afa_nodes):
+  assert len(afa_nodes) > 0
 
 def test_validate_links(page: Page):
   pass
